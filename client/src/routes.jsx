@@ -20,10 +20,10 @@ import NotFound from "./pages/Notfound";
 import Register from "./pages/Register";
 import { protectedLoader } from "./utils/authLoader";
 import CampaignChat from "./features/chat/Campaignchat";
-import Client from './layout/Client';
-import Common from "./layout/Common";
-import Dashboard from "./layout/Dashboard";
-import RootLayout from "./layout/Root";
+import Client from "./layout/Client.jsx";
+import Common from "./layout/Common.jsx";
+import Dashboard from "./layout/Dashboard.jsx";
+import RootLayout from "./layout/Root.jsx";
 
 export const router = createBrowserRouter([
   {
