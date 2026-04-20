@@ -11,14 +11,14 @@ import {
   updateCampaignService,
 } from "../services/campaign.service.js";
 import asyncHandler from "../utils/asyncHandler.js";
-import { success } from "../utils/response.js";
+import { created, success } from "../utils/response.js";
 
 export const createCampaign = asyncHandler(async (req, res) => {
   const data = await createCampaignService({
     ...req.body,
     files: req.files || [],
   });
-  return success(res, "Campaign created successfully", data);
+  return created(res, "Campaign created successfully", data);
 });
 
 export const getAllCampaigns = asyncHandler(async (req, res) => {

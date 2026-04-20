@@ -12,11 +12,15 @@ export const error = (
   res,
   message,
   status = HTTP_STATUS.BAD_REQUEST,
-  errors = null
+  errors = null,
 ) => {
   return res.status(status).json({
     status: "error",
     message,
     errors,
   });
+};
+
+export const created = (res, message, data = null) => {
+  return success(res, message, data, HTTP_STATUS.CREATED);
 };
