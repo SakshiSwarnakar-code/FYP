@@ -4,8 +4,8 @@ import ReviewSubmission from "./features/task/ReviewSubmission";
 import SubmitTaskForm from "./features/task/SubmitTaskForm";
 import TaskList from "./features/task/TaskList";
 import TaskReviewPage from "./features/task/TaskReview";
-import Client from "./layout/Client";
 import Common from "./layout/Common";
+import Client from './layout/Client'
 import Dashboard from "./layout/Dashboard";
 import RootLayout from "./layout/Root";
 import Campaign from "./pages/Campaign";
