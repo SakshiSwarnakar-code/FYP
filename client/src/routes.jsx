@@ -4,10 +4,6 @@ import ReviewSubmission from "./features/task/ReviewSubmission";
 import SubmitTaskForm from "./features/task/SubmitTaskForm";
 import TaskList from "./features/task/TaskList";
 import TaskReviewPage from "./features/task/TaskReview";
-import Common from "./layout/Common";
-import Client from './layout/Client'
-import Dashboard from "./layout/Dashboard";
-import RootLayout from "./layout/Root";
 import Campaign from "./pages/Campaign";
 import CampaignDetails from "./pages/CampaignDetails";
 import CreateCampaign from "./pages/Dashboard/CreateCampaign";
@@ -24,6 +20,10 @@ import NotFound from "./pages/Notfound";
 import Register from "./pages/Register";
 import { protectedLoader } from "./utils/authLoader";
 import CampaignChat from "./features/chat/Campaignchat";
+import Client from './layout/Client';
+import Common from "./layout/Common";
+import Dashboard from "./layout/Dashboard";
+import RootLayout from "./layout/Root";
 
 export const router = createBrowserRouter([
   {
